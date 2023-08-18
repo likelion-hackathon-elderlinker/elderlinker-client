@@ -3,12 +3,17 @@ import styled from "styled-components";
 import { useNavigation } from "../../hooks/navigation";
 import { media } from "../../styles/mixin";
 
-function SmartphoneItem({ title }) {
-    const { goToSmartContent1, goToSmartContent2, goToSmartContent3, goToSmartContent4 } =
+function SmartphoneItem({ title,course }) {
+    const { goToSmartphone, goToSmartContent1, goToSmartContent2, goToSmartContent3, goToSmartContent4 } =
         useNavigation();
 
     const getShortcutDetails = (title) => {
         const details = {
+            smartphone: {
+                displayTitle: "강의",
+                target: goToSmartphone,
+            },
+
             smartContent1: {
                 displayTitle: "카카오톡보내기",
                 target: goToSmartContent1,
