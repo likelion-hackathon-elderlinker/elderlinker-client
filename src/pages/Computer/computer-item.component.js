@@ -4,11 +4,15 @@ import { useNavigation } from "../../hooks/navigation";
 import { media } from "../../styles/mixin";
 
 function ComputerphoneItem({ title }) {
-    const { goToComputerContent1, goToComputerContent2, goToComputerContent3, goToComputerContent4 } =
+    const { goToComputer, goToComputerContent1, goToComputerContent2, goToComputerContent3, goToComputerContent4 } =
         useNavigation();
 
     const getShortcutDetails = (title) => {
         const details = {
+            computer: {
+                displayTitle: "강의",
+                target: goToComputer,
+            },
             computerContent1: {
                 displayTitle: "한글이용하기",
                 target: goToComputerContent1,
