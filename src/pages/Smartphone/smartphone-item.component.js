@@ -66,10 +66,14 @@ const Box = styled.div`
 `;
 
 
-const Title = styled.p`
+const Title = styled.div`
     margin: 10px 0;
     padding-left: 20px;
+    cursor: pointer;
     padding-bottom: 10px;
     border-bottom: 1px solid black;
-    cursor: pointer;
+
+    ${Box}:first-child > & {
+        border-bottom: none;
+    }
 `;

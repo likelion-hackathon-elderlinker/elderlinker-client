@@ -21,9 +21,11 @@ function Smartphone() {
             </Intro>
             <Content>
                 <Wrap>
-                    <ContentTitle>
-                        강의
-                    </ContentTitle>
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                        <ContentTitle>
+                            강의
+                        </ContentTitle>
+                    </div>
                     <Bar></Bar>
 
                     <Wrap>
@@ -120,11 +122,12 @@ const Description = styled.p`
 `;
 
 const ContentTitle = styled.p`
-    padding-left: 20px;
+    padding: 0 0 10px 20px;
     font-size: 2rem;
     font-weight: 500;
     cursor: default;
     float: left;
+    display: 'flex'
 `;
 
 const Bar = styled.div`

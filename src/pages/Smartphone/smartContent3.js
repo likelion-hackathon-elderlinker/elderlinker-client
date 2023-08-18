@@ -12,7 +12,7 @@ function SmartContent3() {
             <Intro>
                 <Wrap>
                     <ContentTitle>
-                        <SmartphoneItme title = "강의"/>
+                        <SmartphoneItme title = "smartphone"/>
                     </ContentTitle>
                     <Bar></Bar>
 
@@ -66,14 +66,14 @@ const Intro = styled.div`
 
 const Content = styled.div`
     width: 100%;
-    height: 660px;
+    height: auto;
     ${media.tablet`
         width: 100%;
-        height: 1000px; 
+        height: auto;
     `}
     ${media.mobile`
         width: 100%;
-        height: 1200px; 
+        height: auto; 
     `}
 `;
 
